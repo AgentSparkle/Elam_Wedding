@@ -40,12 +40,12 @@
                         <div class="mask img-gradient">
                             <div class="container flex-center text-center">
                                 <div class="row mt-5">
-                                    <div class="col-md-12 mb-3 animated fadeIn slower announcment-container smooth-scroll">
-                                        <img class='mx-auto animated rotateInDownLeft' src='weddingImages/extras/shap-1.png'></img>
-                                        <h1 id='announcment-text' class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 " ><strong>Elam & Ramos </strong></h1>
-                                        <h1 id='announcment-text' class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 " ><strong>Wedding </strong></h1>
-                                        <img class='mx-auto animated rotateInUpRight' src='weddingImages/extras/shap-2.png'></img>
-                                        <a href='#date&time'class="btn btn-outline-white infoButton animated fadeIn slower">More Information<i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
+                                    <div class="col-md-12 mb-3 announcment-container smooth-scroll">
+                                        <img id='top-landing-image' class='mx-auto wow rotateInDownLeft' src='weddingImages/extras/shap-1.png' data-wow-delay="0.2s"></img>
+                                        <h1 id='announcment-text' class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 wow fadeIn" data-wow-delay="0.4s"><strong>Elam & Ramos </strong></h1>
+                                        <h1 id='announcment-text' class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 wow fadeIn" data-wow-delay="0.4s"><strong>Wedding </strong></h1>
+                                        <img id='bottom-landing-image' class='mx-auto wow rotateInUpRight' src='weddingImages/extras/shap-2.png' data-wow-delay="0.2s"></img>
+                                        <a href='#date&time'class="btn btn-outline-white infoButton wow fadeIn" data-wow-delay="0.8s">More Information<i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -117,14 +117,15 @@
             </div>
             <div class='card text-center z-depth-5 col-10 mx-auto mb-5' style='height: 700px'>
                 <div class='card-header mb-5'>
-                        <H1>About the Couple</H1>
+                        <H1>About Us</H1>
                 </div>
                 <div class='row'>
-                    <div class='col-12 col-md-6 mb-5'>
-                        <img src="/weddingImages/SarahAboutCropped.jpg" alt="Avatar" class="md-avatar rounded-circle size-4">  
+                    <div class='col-12 col-md-5 mb-6'>
+                        <img src="/weddingImages/SarahAboutCropped.jpg" alt="Avatar" class="md-avatar rounded-circle size-4 wow fadeInLeft z-depth-2" data-wow-delay="0.1s">  
                     </div>
+
                     <div class='col-12 col-md-6'>
-                        <img src="/weddingImages/AlexAboutCropped.jpg" alt="Avatar" class="md-avatar rounded-circle size-4">   
+                        <img src="/weddingImages/AlexAboutCropped.jpg" alt="Avatar" class="md-avatar rounded-circle size-4 wow fadeInRight z-depth-2" data-wow-delay="0.2s">   
                     </div>
                 </div>
                 
@@ -133,22 +134,24 @@
         </div>
     </section>
     
-    <div id='date&time' class="view  jarallax jarallax-date" style="height:5h !important;">
-        <img id='imageFour' class="jarallax-img" src="weddingImages/sarahRingCropped.jpg" alt="" style='height:300px !important'>
-            <div class="mask img-gradient">
-                <div class="container flex-center text-center">
-                    <div class="row ">
-                        <div class="col-md-12 mb-3 announcment-container smooth-scroll">
-                            <img class='mx-auto' src='weddingImages/extras/shap-1.png'></img>
-                            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 countdown-text" ><strong>Save the Date</strong></h1>
-                            <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 countdown-text" ><strong>June 6th, 2020 </strong></h1>
-                            <h1 id='countdown' class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 countdown-text" ><strong> </strong></h1>
-                            <img class='mx-auto' src='weddingImages/extras/shap-2.png'></img>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id='date&time'>
+      <div class="view  jarallax-date">
+          <img id='imageFour' class="jarallax-img" src="weddingImages/sarahRingCropped.jpg" alt="">
+          <div class="mask img-gradient">
+              <div class="container h-100 flex-center text-center">
+                  <div class="row ">
+                      <div class="col-md-12 announcment-container smooth-scroll">
+                          <img id='dateTopImage' class='mx-auto mt-3' src='weddingImages/extras/shap-1.png'></img>
+                          <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 countdown-text" ><strong>Save the Date</strong></h1>
+                          <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 countdown-text" ><strong>June 6th, 2020 </strong></h1>
+                          <h1 id='countdown' class="h1-reponsive white-text text-uppercase font-weight-bold mb-3 countdown-text" ><strong> </strong></h1>
+                          <img id='dateBottomImage' class='mx-auto mb-3' src='weddingImages/extras/shap-2.png'></img>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
+      </div>
     </div>
     
     
@@ -221,6 +224,21 @@
             keepImg: true,
         });
     })
+
+    $('.jarallax-date').jarallax({
+      // parallax effect speed. 0.0 - 1.0
+      speed: 0.5,
+      // path to your parallax image
+      imgSrc: null,
+      // width & height of your parallax image
+      imgWidth: null,
+      imgHeight: null,
+      // enable transformations for effect if supported.
+      enableTransform: true,
+      // z-index of parallax container.
+      zIndex: -100
+    })
+
 </script>
 <script>
 // Set the date we're counting down to
@@ -251,6 +269,9 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "EXPIRED";
   }
 }, 1000);
+</script>
+<script>
+  new WOW().init();
 </script>
 
 </body>

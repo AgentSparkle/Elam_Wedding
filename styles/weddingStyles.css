@@ -6,7 +6,7 @@ header,
     -webkit-transform: translate3d(0,0,0);
 }
 .jarallax-date{
-    height: 300px !important;
+    height: 75vh !important;
 }
 html {
     scroll-behavior: smooth;
@@ -46,6 +46,7 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+
 
 #announcment-text{
     margin: 16px;
@@ -115,7 +116,11 @@ display:block;
         width: 85%;
     }
     #announcment-text{
-        font-size: 28px;
+        font-size: 22px;
+    }
+    .md-avatar.size-4 {
+        width: 180px;
+        height: 180px;
     }
     .map-card{
         height: 400px;
@@ -130,19 +135,30 @@ display:block;
     #imageThree{
         content:url("../weddingImages/sarahFavorite.jpg");
     }
+    #dateTopImage{
+        width:80%
+    }
+    #dateBottomImage{
+        width:80%
+    }
     .countdown-text{
-        font-size: 38px
+        font-size: 18px
     }
     #countdown{
         font-size: 20px;
     }
 }
+
 @media (min-width: 768px) {
     .announcment-container img{
-        width: 85%;
+        width: 95%;
     }
     #announcment-text{
-        font-size: 28px;
+        font-size: 36px;
+    }
+    .md-avatar.size-4 {
+        width: 220px;
+        height: 220px;
     }
     .map-card{
         height: 450px;
@@ -157,6 +173,18 @@ display:block;
     #imageThree{
         content:url("../weddingImages/sarahFavoriteCropped.jpg");
     }
+    #dateTopImage{
+        width:85%
+    }
+    #dateBottomImage{
+        width:85%
+    }
+    .countdown-text{
+        font-size: 36px
+    }
+    #countdown{
+        font-size: 26px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -169,6 +197,18 @@ display:block;
     }
     #announcment-text{
         font-size: 36px;
+    }
+    #dateTopImage{
+        width:100%
+    }
+    #dateBottomImage{
+        width:100%
+    }
+    .countdown-text{
+        font-size: 48px
+    }
+    #countdown{
+        font-size: 32px;
     }
     
 } 
@@ -186,10 +226,7 @@ display:block;
     }
 }
 
-.md-avatar.size-4 {
-    width: 220px;
-    height: 220px;
-}
+
 
 
 
