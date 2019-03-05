@@ -5,6 +5,9 @@ header,
     height: 700px;
     -webkit-transform: translate3d(0,0,0);
 }
+.jarallax-date{
+    height: 300px !important;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -127,6 +130,12 @@ display:block;
     #imageThree{
         content:url("../weddingImages/sarahFavorite.jpg");
     }
+    .countdown-text{
+        font-size: 38px
+    }
+    #countdown{
+        font-size: 20px;
+    }
 }
 @media (min-width: 768px) {
     .announcment-container img{
@@ -177,6 +186,10 @@ display:block;
     }
 }
 
+.md-avatar.size-4 {
+    width: 220px;
+    height: 220px;
+}
 
 
 
