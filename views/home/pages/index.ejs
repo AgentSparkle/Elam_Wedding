@@ -9,53 +9,66 @@
         <!--Carousel Wrapper-->
         <div id="carousel-example-1z" class="carousel slide carousel-fade animated fadeIn slow" data-ride="carousel">
                 <!--Indicators-->
+                <!-- Allows user to click left or right to display new image -->
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-1z" data-slide-to="1"></li>
                     <li data-target="#carousel-example-1z" data-slide-to="2"></li>
                 </ol>
                 <!--/.Indicators-->
+                
                 <!--Slides-->
+                <!-- Pictures in slide -->
                 <div class="carousel-inner" role="listbox">
-                <!--First slide-->
-                <div class="carousel-item active view jarallax" style="height: 100vh;">
-                    <img id='imageOne' class="jarallax-img" src="weddingImages/Compressed/botanicalWide.jpg" alt="">
-                    <div class="mask img-gradient">
-                        <div class="container flex-center text-center">
-                            <div class="row mt-5">
-                                <div class="col-md-12 mb-3 announcment-container smooth-scroll">
-                                    <img id='top-landing-image' class='mx-auto wow rotateInDownLeft' src='weddingImages/extras/shap-1.png' data-wow-delay="0.4s"></img>
-                                    <h1 id='announcment-text' class="h1-reponsive white-text mb-3 wow fadeIn" data-wow-delay="0.6s"><strong>Elam & Ramos </strong></h1>
-                                    <h1 id='announcment-text' class="h1-reponsive white-text wow fadeIn" data-wow-delay="0.6s"><strong>Wedding </strong></h1>
-                                    <img id='bottom-landing-image' class='mx-auto wow rotateInUpRight' src='weddingImages/extras/shap-2.png' data-wow-delay="0.4s"></img>
-                                    <a href='#bride_groom'class="btn btn-outline-white infoButton wow fadeIn" data-wow-delay="0.8s">More Information<i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
+
+                    <!--First slide-->
+                    <!-- jarallax creates a parallax effect on images-->
+                    <!-- Basically the dynamically image moves as the user scrolls -->
+                    <!--Hieght: 100vh makes image always load to users full screen-->
+                    <div class="carousel-item active view jarallax" style="height: 100vh;">
+                        <img id='imageOne' class="jarallax-img" src="weddingImages/Compressed/botanicalWide.jpg" alt="">
+                        <!-- Creates a purple/pink gradient over paralax image -->
+                        <div class="mask img-gradient">
+                            <div class="container flex-center text-center">
+                            <!--Announcment container -->
+                                <div class="row mt-5">
+                                    <div class="col-md-12 mb-3 announcment-container smooth-scroll">
+                                        <img id='top-landing-image' class='mx-auto wow rotateInDownLeft' src='weddingImages/extras/shap-1.png' data-wow-delay="0.4s"></img>
+                                        <h1 id='announcment-text' class="h1-reponsive white-text mb-3 wow fadeIn" data-wow-delay="0.6s"><strong>Elam & Ramos </strong></h1>
+                                        <h1 id='announcment-text' class="h1-reponsive white-text wow fadeIn" data-wow-delay="0.6s"><strong>Wedding </strong></h1>
+                                        <img id='bottom-landing-image' class='mx-auto wow rotateInUpRight' src='weddingImages/extras/shap-2.png' data-wow-delay="0.4s"></img>
+                                        <a href='#bride_groom'class="btn btn-outline-white infoButton wow fadeIn" data-wow-delay="0.8s">More Information<i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--/First slide-->
-                <!--Second slide-->
-                <div class="carousel-item view jarallax" style="height: 100vh;">
-                    <img id='imageTwo' class="jarallax-img" src="weddingImages/Compressed/proposalCropped.jpg" alt="">
-                    <div class="mask img-gradient">
-                        <div class="container flex-center text-center">
-                            <div class="row mt-5">
-                                <div class="col-md-12 mb-3 announcment-container smooth-scroll">
-                                    <img class='mx-auto' src='weddingImages/extras/shap-1.png'></img>
-                                    <h1 id='announcment-text' class="h1-reponsive white-text mb-3" ><strong>Elam & Ramos </strong></h1>
-                                    <h1 id='announcment-text' class="h1-reponsive white-text " ><strong>Wedding </strong></h1>
-                                    <img class='mx-auto' src='weddingImages/extras/shap-2.png'></img>
-                                    <a href='#bride_groom'class="btn btn-outline-white infoButton">More Information <i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/Second slide-->
-                <!--Third slide-->
+                    <!--/First slide-->
+
+                    <!--Second slide-->
+                    <!-- Repeat of first slide-->
                     <div class="carousel-item view jarallax" style="height: 100vh;">
-                        <img id='imageThree' class="jarallax-img" src="Compressed/weddingImages/sarahFavoriteCropped.jpg" alt="">
+                        <img id='imageTwo' class="jarallax-img" src="weddingImages/Compressed/proposalCropped.jpg" alt="">
+                        <div class="mask img-gradient">
+                            <div class="container flex-center text-center">
+                                <div class="row mt-5">
+                                    <div class="col-md-12 mb-3 announcment-container smooth-scroll">
+                                        <img class='mx-auto' src='weddingImages/extras/shap-1.png'></img>
+                                        <h1 id='announcment-text' class="h1-reponsive white-text mb-3" ><strong>Elam & Ramos </strong></h1>
+                                        <h1 id='announcment-text' class="h1-reponsive white-text " ><strong>Wedding </strong></h1>
+                                        <img class='mx-auto' src='weddingImages/extras/shap-2.png'></img>
+                                        <a href='#bride_groom'class="btn btn-outline-white infoButton">More Information <i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--/Second slide-->
+
+                <!--Third slide-->
+                <!-- Repeat of first slide-->
+                    <div class="carousel-item view jarallax" style="height: 100vh;">
+                        <img id='imageThree' class="jarallax-img" src="weddingImages/Compressed/sarahFavoriteCropped.jpg" alt="">
                         <div class="mask img-gradient">
                             <div class="container flex-center text-center">
                                 <div class="row mt-5">
@@ -73,7 +86,9 @@
                 <!--/Third slide-->
                 </div>
                 <!--/.Slides-->
+
                 <!--Controls-->
+                <!--Controls on bottom of pictures to control image selection-->
                 <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -88,19 +103,26 @@
     </div>
     
     <section id='bride_groom'>
+        <!-- Sprint warmth gradient gives pinkish gradient background color effect-->
         <div class='pt-5 pb-5 spring-warmth-gradient'>
+            <!-- Card that holds timeline and bride/groom pictures-->
             <div id='bride_groom-card' class='card text-center z-depth-5 col-10 mx-auto' style='height: 100%'>
+                <!--Title-->
                 <H1 class='sm-mb-5 wedding-text wedding-title-text'>Bride and Groom</H1>
+                <!--Row holds both bride/groom pictures, ring image between them, and names beneath picture-->
                 <div class='row'>
-                    <div class='col-12 col-md-5 order-md-first mx-auto'>
+                    <!-- column has picture and name -->
+                    <div class='col-12 col-md-5 mx-auto'>
                         <div>
                             <img src="weddingImages/SarahAboutCropped.jpg" alt="Avatar" class="md-avatar rounded-circle size-4 img-fluid wow fadeInLeft z-depth-2" data-wow-delay="0.1s">
                         </div>
                         <h2 class="h2-reponsive wedding-text">Sarah Lynn Ramos</h2>
                     </div>
+                    <!--Heart and ring image-->
                     <div class='col-5 col-md-2 sm-mt-5 mb-5 mx-auto'>
                         <img id='ringHeart' src="weddingImages/extras/wedding-ring.svg" alt="Avatar" class="wow fadeIn img-fluid mb-" data-wow-delay="0.2s">   
                     </div>
+                    <!-- column has picture and name -->
                     <div class='col-12 col-md-5 mx-auto'>
                         <div>
                             <img src="/weddingImages/AlexAboutCropped.jpg" alt="Avatar" class="md-avatar rounded-circle size-4 img-fluid wow fadeInRight z-depth-2" data-wow-delay="0.2s">
@@ -108,136 +130,139 @@
                         <h2 class="h2-reponsive wedding-text">James Alexander Elam</h2> 
                     </div>
                 </div>
+
+                <!--Timeline section-->
+                <!--carousel with three images lined up-->
+                <!--Currently using stock images-->
                 <div class='mx-auto'>
-                        <H1 class='wedding-text text-center wedding-title-text'>Our Timeline</H1>
-                        <H2 class='wedding-text m-0'>6 years and counting</H2>
-                        <!--Carousel Wrapper-->
-                        <div id="multi-item-example" class="carousel slide carousel-multi-item" >
-                            <!--Controls-->
-                            <div class="controls-top">
-                                <a class="btn-floating grey darken-2" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                                <a class="btn-floating grey darken-2" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-                            </div>
-                            <!--/.Controls-->
-                        
-                            <!--Indicators-->
-                            <ol class="carousel-indicators">
-                                <li data-target="#multi-item-example" data-slide-to="0" class="active grey darken-2"></li>
-                                <li data-target="#multi-item-example" data-slide-to="1" class='grey darken-1'></li>
-                                <li data-target="#multi-item-example" data-slide-to="2" class='grey darken-1'></li>
-                            </ol>
-                            <!--/.Indicators-->
-                        
-                            <!--Slides-->
-                            <div class="carousel-inner" role="listbox">
-                        
-                                <!--First slide-->
-                                <div class="carousel-item active">
-                                    <div class="col-md-4">
-                                        <div class="card mb-2">
-                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                            alt="Card image cap">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Card title</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mb-2">
-                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                            alt="Card image cap">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Card title</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mb-2">
-                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                                            alt="Card image cap">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Card title</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/.First slide-->
-                            
-                                <!--Second slide-->
-                                <div class="carousel-item">
-                                    <div class="col-md-4">
-                                        <div class="card mb-2">
-                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                                            alt="Card image cap">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Card title</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mb-2">
-                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                                            alt="Card image cap">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Card title</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mb-2">
-                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                                            alt="Card image cap">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Card title</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/.Second slide-->
-                                <!--Third slide-->
-                                <div class="carousel-item">
-                                    <div class="col-md-4">
+                    <H1 class='wedding-text text-center wedding-title-text'>Our Timeline</H1>
+                    <H2 class='wedding-text m-0'>6 years and counting</H2>
+                    <!--Carousel Wrapper-->
+                    <div id="multi-item-example" class="carousel slide carousel-multi-item" >
+                        <!--Controls-->
+                        <div class="controls-top">
+                            <a class="btn-floating grey darken-2" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                            <a class="btn-floating grey darken-2" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                        <!--/.Controls-->
+                    
+                        <!--Indicators-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#multi-item-example" data-slide-to="0" class="active grey darken-2"></li>
+                            <li data-target="#multi-item-example" data-slide-to="1" class='grey darken-1'></li>
+                            <li data-target="#multi-item-example" data-slide-to="2" class='grey darken-1'></li>
+                        </ol>
+                        <!--/.Indicators-->
+                    
+                        <!--Slides-->
+                        <!-- Change 'card-img-top' on each card to complete timeline-->
+                        <div class="carousel-inner" role="listbox">
+                    
+                            <!--First slide-->
+                            <div class="carousel-item active">
+                                <div class="col-md-4">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
                                         alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
                                         </div>
                                     </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mb-2">
-                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-                                            alt="Card image cap">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Card title</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mb-2">
-                                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-                                            alt="Card image cap">
-                                            <div class="card-body">
-                                                <h4 class="card-title">Card title</h4>
-                                            </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
                                         </div>
                                     </div>
                                 </div>
-                                <!--/.Third slide-->
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <!--/.Slides-->
+                            <!--/.First slide-->
+                        
+                            <!--Second slide-->
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.Second slide-->
+                            <!--Third slide-->
+                            <div class="carousel-item">
+                                <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                                    alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Card title</h4>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/.Third slide-->
                         </div>
-                        <!--/.Carousel Wrapper-->
+                        <!--/.Slides-->
                     </div>
+                    <!--/.Carousel Wrapper-->
+                </div>
             </div>
         </div>
     </section>
-    <section id='timeline' class=''>
-        
-    </section>
-    
+
     <section id='date_time'>
+        <!-- Parallax effect like the landing image section-->
         <div class="view  jarallax-date">
           <img id='imageFour' class="jarallax-img" src="weddingImages/Compressed/sarahRingCropped.jpg" alt="">
           <div class="mask img-gradient">
@@ -247,6 +272,8 @@
                             <img id='dateTopImage' class='mx-auto mt-3' src='weddingImages/extras/shap-1.png'></img>
                             <h1 class="h1-reponsive white-text mb-1 countdown-text">Save the Date</h1>
                             <h1 class="h1-reponsive white-text mb-1 countdown-text">June 6th, 2020</h1>
+                            <!--Uses javascript below to display time until wedding-->
+                            <!--Set date in the script below to change the date-->
                             <h1 id='countdown' class="h1-reponsive white-text mb-2 countdown-text"></h1>
                             <img id='dateBottomImage' class='mx-auto mb-3' src='weddingImages/extras/shap-2.png'></img>
                         </div>
@@ -266,9 +293,11 @@
                             <div class="form-header grey darken-2">
                                 <h3>RSVP</h3>
                             </div>
+                            <!--Placeholder div for when there is an error-->
+                            <!-- Jquery will fill this with error message-->
                             <div id='errorAlert'>
-                                
                             </div>
+                            <!--Form submit for attendance-->
                             <form action="/rsvp/submit" id = "rsvp-form">
                                 <div class="md-form">
                                     <i class="fas fa-user prefix grey-text"></i>

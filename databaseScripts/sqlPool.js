@@ -1,4 +1,6 @@
 const sql = require('mssql')
+
+//Azure credentials to database
 var dbConfig = {
     server: "elamwedding.database.windows.net",
     database: "ElamWedding",
@@ -10,6 +12,7 @@ var dbConfig = {
     }
 };
 
+//establish connection to database
 const azurePromise = new sql.ConnectionPool(dbConfig)
   .connect()
   .then(logPool => {
