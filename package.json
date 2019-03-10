@@ -1,0 +1,29 @@
+{
+  "name": "elam_wedding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgentSparkle/Elam_Wedding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgentSparkle/Elam_Wedding/issues"
+  },
+  "homepage": "https://github.com/AgentSparkle/Elam_Wedding#readme",
+  "dependencies": {
+    "artillery": "^1.6.0-27",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "moment": "^2.24.0",
+    "mssql": "^5.0.2"
+  }
+}
