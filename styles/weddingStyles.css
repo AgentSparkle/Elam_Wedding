@@ -6,64 +6,38 @@ header,
     -webkit-transform: translate3d(0,0,0);
 }
 
-html {
-    scroll-behavior: smooth;
-}
 body, html {
     height: 100%;
+    background-color: #FAD0C5;
 }
 .wow {
     visibility: hidden;
 }
+
+/* Cursive Font */
 .wedding-text{
     font-family: 'Parisienne', cursive;
     font-weight: bolder;
     margin: 20px;
 }
-#bride_groom .card{
-    background-image: url("https://previews.123rf.com/images/dgemma/dgemma1405/dgemma140500085/28462128-abstract-seamless-floral-pattern-contour-elegant-wedding-background.jpg");
-}
 
+/* Bold Serif Font */
 #announcment-text,  #countdown, .countdown-text{
     letter-spacing: 4px;
     font-family: 'Lora', serif;
 }
 
-h5 {
-    letter-spacing: 3px;
+.infoButton{
+    margin-top: 90px;
 }
 
-.mapouter{
-    text-align:right;
-    height:100%;
-    width:100%;
-}
 
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:100%;
-    width:100%;
-}
-
-.bg {
-/* Full height */
-height: 100%;
-overflow: hidden;
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-#announcment-text{
-
-}
-
+/* BackGround Gradient Color */
 .img-gradient{
 position:relative;
 display:inline-block;
 }
+
 .img-gradient {
 content:'';
 position:absolute;
@@ -81,18 +55,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', end
 .img-gradient img{
 display:block;
 }
+/* End of BackGround Gradient Color */
 
-.infoButton{
-    margin-top: 90px;
+/* BRIDE AND GROOM SECTION */
+#bride_groom-card{
+    background-image: url("https://previews.123rf.com/images/dgemma/dgemma1405/dgemma140500085/28462128-abstract-seamless-floral-pattern-contour-elegant-wedding-background.jpg");
 }
+/* Ring Icon on Bride and Groom Card */
 #ringHeart{
     max-width: 160px;
     max-height: 160px;
 }
-.btn-sc{
-    background-color: #FFFB01;
-}
+/* End of Ring Icon on Bride and Groom Card */
+/* END OF BRIDE AND GROOM SECTION */
 
+/* Map of Wedding on RSVP Section */
+.map-container-6{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container-6 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* End of Map of Wedding on RSVP Section */
+
+/* Parallax Effect */
 @media (max-width: 450px) {
     .btn-floating {
         margin-left: 0;
@@ -126,6 +119,8 @@ display:block;
     }
 
 }
+/* End of Parallax Effect */
+
 @media (min-width: 1px) {
     .announcment-container img{
         width: 85%;
@@ -143,9 +138,14 @@ display:block;
     .aboutUs H2{
         font-size: 6.5vw
     }
-    .map-card{
+    .wedding-title-text{
+        font-size: 15vw;
+        margin: 10px 0px 0px 0px;
+
+    }
+    .wedding-container{
         height: 50vh;
-        width: 100vw;
+        width: 90vw;
     }
     #imageOne{
         content:url("../weddingImages/Compressed/botanicalwideSmall.jpg");
@@ -190,9 +190,13 @@ display:block;
     .aboutUs H2{
         font-size: 2.75vw
     }
-    .map-card{
+    .wedding-title-text{
+        font-size: 5vw
+    }
+    .wedding-container{
         height: 50vh;
         width: 75vw;
+        margin-bottom: 150px;
     }
     .jarallax-date{
         height: 50vh !important;

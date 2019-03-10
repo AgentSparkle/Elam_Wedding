@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class='bg spring-warmth-gradient'>
+    <div class='bg'>
         <!--Carousel Wrapper-->
         <div id="carousel-example-1z" class="carousel slide carousel-fade animated fadeIn slow" data-ride="carousel">
                 <!--Indicators-->
@@ -45,7 +45,7 @@
                                     <h1 id='announcment-text' class="h1-reponsive white-text mb-3 wow fadeIn" data-wow-delay="0.6s"><strong>Elam & Ramos </strong></h1>
                                     <h1 id='announcment-text' class="h1-reponsive white-text wow fadeIn" data-wow-delay="0.6s"><strong>Wedding </strong></h1>
                                     <img id='bottom-landing-image' class='mx-auto wow rotateInUpRight' src='weddingImages/extras/shap-2.png' data-wow-delay="0.4s"></img>
-                                    <a href='#Bride_Groom'class="btn btn-outline-white infoButton wow fadeIn" data-wow-delay="0.8s">More Information<i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
+                                    <a href='#bride_groom'class="btn btn-outline-white infoButton wow fadeIn" data-wow-delay="0.8s">More Information<i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                                     <h1 id='announcment-text' class="h1-reponsive white-text mb-3" ><strong>Elam & Ramos </strong></h1>
                                     <h1 id='announcment-text' class="h1-reponsive white-text " ><strong>Wedding </strong></h1>
                                     <img class='mx-auto' src='weddingImages/extras/shap-2.png'></img>
-                                    <a href='#Bride_Groom'class="btn btn-outline-white infoButton">More Information <i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
+                                    <a href='#bride_groom'class="btn btn-outline-white infoButton">More Information <i class="fas fa-angle-down ml-2" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +106,8 @@
     
     <section id='bride_groom'>
         <div class='pt-5 pb-5 spring-warmth-gradient'>
-            <div class='card text-center z-depth-5 col-10 mx-auto' style='height: 100%'>
-                <H1 class='sm-mb-5 wedding-text'>Bride and Groom</H1>
+            <div id='bride_groom-card' class='card text-center z-depth-5 col-10 mx-auto' style='height: 100%'>
+                <H1 class='sm-mb-5 wedding-text wedding-title-text'>Bride and Groom</H1>
                 <div class='row'>
                     <div class='col-12 col-md-5 order-md-first mx-auto'>
                         <div>
@@ -125,8 +125,148 @@
                         <h2 class="h2-reponsive wedding-text">James Alexander Elam</h2> 
                     </div>
                 </div>
+                <div class='mx-auto'>
+                        <H1 class='wedding-text text-center wedding-title-text'>Our Timeline</H1>
+                        <H2 class='wedding-text m-0'>6 years and counting</H2>
+                        <!--Carousel Wrapper-->
+                        <div id="multi-item-example" class="carousel slide carousel-multi-item" >
+                            <!--Controls-->
+                            <div class="controls-top">
+                                <a class="btn-floating grey darken-2" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                                <a class="btn-floating grey darken-2" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+                            <!--/.Controls-->
+                        
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#multi-item-example" data-slide-to="0" class="active grey darken-2"></li>
+                                <li data-target="#multi-item-example" data-slide-to="1" class='grey darken-1'></li>
+                                <li data-target="#multi-item-example" data-slide-to="2" class='grey darken-1'></li>
+                            </ol>
+                            <!--/.Indicators-->
+                        
+                            <!--Slides-->
+                            <div class="carousel-inner" role="listbox">
+                        
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                            
+                                    <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                                    <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                                    <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                                </div>
+                                <!--/.First slide-->
+                            
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                            
+                                    <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                                    <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                                    <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                                </div>
+                                <!--/.Second slide-->
+                            
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                            
+                                    <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                                    <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                                    <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                                        alt="Card image cap">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Card title</h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                                </div>
+                                <!--/.Third slide-->
+                        
+                            </div>
+                            <!--/.Slides-->
+                        
+                        </div>
+                        <!--/.Carousel Wrapper-->
+                    </div>
             </div>
         </div>
+    </section>
+    <section id='timeline' class=''>
+        
     </section>
     
     <section id='date_time'>
@@ -147,23 +287,101 @@
             </div>
         </div>
     </section>
-    
+
+
+    <!--Section: Contact v.1-->
     <section id='location'>
-        <div  class='text-center spring-warmth-gradient'>
-            <div class='map-card card-body z-depth-5 mx-auto p-0'>
-                <div class='card-header m-0'>
-                    <h1 class='wedding-text m-0'>Location</h1>
+        <div class='wedding-container mx-auto pt-5'>
+
+            <div class="row">
+        
+            <!--Grid column-->
+            <div class="col-lg-5 col-xl-4 mb-4 order-md-first order-last">
+        
+                <!--Form with header-->
+                <div class="card">
+        
+                <div class="card-body">
+                    <!--Header-->
+                    <div class="form-header grey darken-2">
+                        <h3>RSVP</h3>
+                    </div>
+        
+                    <!--Body-->
+                    <div class="md-form">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="form-name" class="form-control">
+                        <label for="form-name">First & Last Name</label>
+                    </div>
+        
+                    <div class="md-form">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="text" id="form-email" class="form-control">
+                        <label for="form-email">Your email</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fas fa-list-ol prefix grey-text"></i>
+                        <input type="text" id="form-email" class="form-control">
+                        <label for="form-email">Number of Guests</label>
+                    </div>
+        
+                    <div class="md-form">
+                        <i class="fas fa-music prefix grey-text"></i>
+                        <input type="text" id="form-Subject" class="form-control">
+                        <label for="form-Subject">Favorite Song</label>
+                    </div>
+        
+                    <div class="md-form">
+                        <i class="fas fa-pencil-alt prefix grey-text"></i>
+                        <textarea id="form-text" class="form-control md-textarea" rows="2"></textarea>
+                        <label for="form-text">Additional Comments</label>
+                    </div>
+        
+                    <div class="text-center mt-4">
+                        <button class="btn btn-red">Submit</button>
+                    </div>
+        
                 </div>
-                <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=oak%20lane%20oregon%20il&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                        </iframe>
+        
+                </div>
+                <!--Form with header-->
+        
+            </div>
+            <!--Grid column-->
+        
+            <!--Grid column-->
+            <div class="col-lg-7 col-xl-8">
+                <!--Google map-->
+                <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+                <iframe src="https://maps.google.com/maps?q=oak%20lane%20oregon%20il&t=k&z=17&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+        
+                <br>
+                <!--Buttons-->
+                <div class="row text-center pb-5">
+                    <div class="col-6 col-md-4">
+                        <a class="btn-floating grey darken-2"><i class="fas fa-calendar-alt"></i></a>
+                        <p>June 6th, 2020<br>10:00 AM</p>
+                    </div>
+                    <div class="col-6 col-md-4">
+                            <a class="btn-floating grey darken-2"><i class="fas fa-map-marker-alt"></i></a>
+                            <p>3261 Daysville Rd,<br> Oregon, IL 61061</p>
+                        </div>
+                    <div class="col-md-4">
+                        <a class="btn-floating grey darken-2"><i class="fas fa-envelope"></i></a>
+                        <p>Sarahramos766@gmail.com<br>James@alexelam.dev</p>
                     </div>
                 </div>
+        
+            </div>
+            <!--Grid column-->
+        
             </div>
         </div>
     </section>
-
+    <!--Section: Contact v.1-->
 <!--  SCRIPTS  -->
   <!-- JQuery -->
   <script type="text/javascript" src="mdb/js/jquery-3.3.1.min.js"></script>
