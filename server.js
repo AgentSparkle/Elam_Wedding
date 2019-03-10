@@ -27,10 +27,9 @@ app.post('/rsvp/submit', function(req, res) {
     guests = req.body.guests
     song = req.body.song
     comments = req.body.comments
-
+    console.log(name, email, guests, song, comments)
     //This function inserts form into MSSQL database
     submitForm.logAttendee(name, email, guests, song, comments, res)
-    
 
 });
 

@@ -1,15 +1,17 @@
+/* Fixed a bug with parallax effect*/
 html,
 body,
 header,
 .jarallax {
-    height: 700px;
     -webkit-transform: translate3d(0,0,0);
 }
 
+/* Background color helps fade gradient class used in some sections */
 body, html {
     height: 100%;
     background-color: #FAD0C5;
 }
+/* Trick to keep animation invisible until it's fully load or else it stutters */
 .wow {
     visibility: hidden;
 }
@@ -27,6 +29,7 @@ body, html {
     font-family: 'Lora', serif;
 }
 
+/* Pushes info button down on landing page */
 .infoButton{
     margin-top: 90px;
 }
@@ -122,12 +125,16 @@ display:block;
 /* End of Parallax Effect */
 
 @media (min-width: 1px) {
+    /*Landing Page section */
     .announcment-container img{
         width: 85%;
     }
     #announcment-text{
         font-size: 36px;
     }
+    /*End of Landing Page section */
+
+    /*About us and timeline */
     .md-avatar.size-4 {
         width: 40vw;
         height: 100%;
@@ -143,10 +150,10 @@ display:block;
         margin: 10px 0px 0px 0px;
 
     }
-    .wedding-container{
-        height: 50vh;
-        width: 90vw;
-    }
+    /*End of About us and timeline */
+
+    /* I use CSS to determine image in landing page so that I could change images depending on device size */
+    /* Some images needed to be cropped on different sizes */
     #imageOne{
         content:url("../weddingImages/Compressed/botanicalwideSmall.jpg");
     }
@@ -156,6 +163,11 @@ display:block;
     #imageThree{
         content:url("../weddingImages/Compressed/sarahFavorite.jpg");
     }
+    /* End of landing page images */
+
+    
+    /*countdown timer section */
+    /* Size of image on save the date section */
     .jarallax-date{
         height: 50vh !important;
     }
@@ -171,15 +183,26 @@ display:block;
     #countdown{
         font-size: 6.5vw;
     }
+    /* End of countdown timer section */
+
+    /*Container for form and location section */
+    .wedding-container{
+        height: 50vh;
+        width: 90vw;
+    }
 }
 
 @media (min-width: 768px) {
+    /*Landing Page section */
     .announcment-container img{
         width: 95%;
     }
     #announcment-text{
         font-size: 48px;
     }
+    /*End of Landing Page section */
+
+    /*About us and timeline */
     .md-avatar.size-4 {
         width: 200px;
         height: 200px;
@@ -193,6 +216,8 @@ display:block;
     .wedding-title-text{
         font-size: 5vw
     }
+    /*End of About us and timeline */
+
     .wedding-container{
         height: 50vh;
         width: 75vw;
