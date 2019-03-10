@@ -5,19 +5,28 @@ header,
     height: 700px;
     -webkit-transform: translate3d(0,0,0);
 }
-.jarallax-date{
-    height: 75vh !important;
-}
+
 html {
     scroll-behavior: smooth;
 }
 body, html {
     height: 100%;
-    
+}
+.wow {
+    visibility: hidden;
+}
+.wedding-text{
+    font-family: 'Parisienne', cursive;
+    font-weight: bolder;
+    margin: 20px;
+}
+#bride_groom .card{
+    background-image: url("https://previews.123rf.com/images/dgemma/dgemma1405/dgemma140500085/28462128-abstract-seamless-floral-pattern-contour-elegant-wedding-background.jpg");
 }
 
-h1 {
-    letter-spacing: 8px;
+#announcment-text,  #countdown, .countdown-text{
+    letter-spacing: 4px;
+    font-family: 'Lora', serif;
 }
 
 h5 {
@@ -47,9 +56,8 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
-
 #announcment-text{
-    margin: 16px;
+
 }
 
 .img-gradient{
@@ -62,7 +70,7 @@ position:absolute;
 left:0; top:0;
 width:100%; height:100%;
 display:inline-block;
-background: -moz-linear-gradient(top, rgba(0,47,75,0.5) 0%, rgba(219, 125, 169, 0.568) 100%); /* FF3.6+ */
+background: -moz-linear-gradient(top, rgba(0,47,75,0.5) 0%, #db7da991 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(219, 125, 169, 0.568)), color-stop(100%,rgba(0,47,75,0.5))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(219, 125, 169, 0.568) 100%); /* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(top, rgba(0,47,75,0.5) 0%,rgba(219, 125, 169, 0.568) 100%); /* Opera 11.10+ */
@@ -76,6 +84,13 @@ display:block;
 
 .infoButton{
     margin-top: 90px;
+}
+#ringHeart{
+    max-width: 160px;
+    max-height: 160px;
+}
+.btn-sc{
+    background-color: #FFFB01;
 }
 
 @media (max-width: 450px) {
@@ -116,36 +131,45 @@ display:block;
         width: 85%;
     }
     #announcment-text{
-        font-size: 22px;
+        font-size: 36px;
     }
     .md-avatar.size-4 {
-        width: 180px;
-        height: 180px;
+        width: 40vw;
+        height: 100%;
+    }
+    .aboutUs H1{
+        font-size: 10vw
+    }
+    .aboutUs H2{
+        font-size: 6.5vw
     }
     .map-card{
-        height: 400px;
-        width: 100%;
+        height: 50vh;
+        width: 100vw;
     }
     #imageOne{
-        content:url("../weddingImages/botanicalwideSmall.jpg");
+        content:url("../weddingImages/Compressed/botanicalwideSmall.jpg");
     }
     #imageTwo{
-        content:url("../weddingImages/proposal.jpg");
+        content:url("../weddingImages/Compressed/proposal.jpg");
     }
     #imageThree{
-        content:url("../weddingImages/sarahFavorite.jpg");
+        content:url("../weddingImages/Compressed/sarahFavorite.jpg");
+    }
+    .jarallax-date{
+        height: 50vh !important;
     }
     #dateTopImage{
-        width:80%
+        width:75vw
     }
     #dateBottomImage{
-        width:80%
+        width:75vw
     }
     .countdown-text{
-        font-size: 18px
+        font-size: 8.5vw;
     }
     #countdown{
-        font-size: 20px;
+        font-size: 6.5vw;
     }
 }
 
@@ -154,24 +178,33 @@ display:block;
         width: 95%;
     }
     #announcment-text{
-        font-size: 36px;
+        font-size: 48px;
     }
     .md-avatar.size-4 {
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
+    }
+    .aboutUs H1{
+        font-size: 7.5vw
+    }
+    .aboutUs H2{
+        font-size: 2.75vw
     }
     .map-card{
-        height: 450px;
-        width: 600px;
+        height: 50vh;
+        width: 75vw;
+    }
+    .jarallax-date{
+        height: 50vh !important;
     }
     #imageOne{
-        content:url("../weddingImages/botanicalWide.jpg");
+        content:url("../weddingImages/Compressed/botanicalWide.jpg");
     }
     #imageTwo{
-        content:url("../weddingImages/proposalCropped.jpg");
+        content:url("../weddingImages/Compressed/proposalCropped.jpg");
     }
     #imageThree{
-        content:url("../weddingImages/sarahFavoriteCropped.jpg");
+        content:url("../weddingImages/Compressed/sarahFavoriteCropped.jpg");
     }
     #dateTopImage{
         width:85%
@@ -180,23 +213,24 @@ display:block;
         width:85%
     }
     .countdown-text{
-        font-size: 36px
+        font-size: 60px
     }
     #countdown{
-        font-size: 26px;
+        font-size: 36px;
     }
 }
 
 @media (min-width: 992px) {
-    .map-card{
-        height: 450px;
-        width: 600px;
-    }
+
     .announcment-container img{
         width: 100%;
     }
+    .md-avatar.size-4 {
+        width: 240px;
+        height: 240px;
+    }
     #announcment-text{
-        font-size: 36px;
+        font-size: 60px;
     }
     #dateTopImage{
         width:100%
@@ -214,14 +248,50 @@ display:block;
 } 
 
 @media (min-width: 1200px) {
-    .map-card{
-        height: 450px;
-        width: 600px;
+
+    .announcment-container img{
+        width: 100%;
     }
+    .aboutUs H1{
+        font-size: 5.5vw
+    }
+    .aboutUs H2{
+        font-size: 2.5vw
+    }
+    #announcment-text{
+        font-size: 60px;
+    }
+    #dateTopImage{
+        width:100%
+    }
+    #dateBottomImage{
+        width:100%
+    }
+    .countdown-text{
+        font-size: 60px
+    }
+    #countdown{
+        font-size: 48px;
+    }
+}
+@media (min-width: 1600px) {
+
     .announcment-container img{
         width: 100%;
     }
     #announcment-text{
+        font-size: 60px;
+    }
+    #dateTopImage{
+        width:100%
+    }
+    #dateBottomImage{
+        width:100%
+    }
+    .countdown-text{
+        font-size: 60px
+    }
+    #countdown{
         font-size: 48px;
     }
 }
